@@ -30,8 +30,8 @@ int main()
     ArmaAtaque* arma1 = new Espada("Espada da verdade",0,20);
     ArmaAtaque* arma2 = new Manopla("Manopla das joias do infinito",0,100);
     ArmaAtaque* arma3 = new Martelo("Mjölnir",0,80);
-    ArmaAtaque* arma4 = new Torreta("Robo amigo",0,15);
-    ArmaAtaque* arma5 = new Varinha_Magica("Centelha final",0,30);
+    ArmaAtaque* arma4 = new Torreta("Robo amigo",0,30);
+    ArmaAtaque* arma5 = new Varinha_Magica("Centelha final",0,60);
     ArmaAtaque* arma6 = new Rosa("Super Rosa Amarela",0,10);
     ArmaDefesa* escudo1 = new Barreira_Magica("Barreira Prismatica", 10);
     ArmaDefesa* escudo2 = new Totem("Joia da realidade", 2);

@@ -17,5 +17,5 @@ int Killjoy::criarDefesa()
 
 string Killjoy::pegarDescricao() 
 {
-    return "Ahh e melhor fugirem";
+    return "Ahh é melhor fugirem!";
 }

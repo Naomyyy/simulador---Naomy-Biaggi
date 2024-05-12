@@ -17,5 +17,5 @@ int Lux::criarDefesa()
 
 string Lux::pegarDescricao() 
 {
-    return "Demacia";
+    return "Demaciaaaaaa!";
 }

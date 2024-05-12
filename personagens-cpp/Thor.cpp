@@ -17,5 +17,5 @@ int Thor::criarDefesa()
 
 string Thor::pegarDescricao() 
 {
-    return "Tragam-me o Thanos";
+    return "Tragam-me o Thanos!";
 }

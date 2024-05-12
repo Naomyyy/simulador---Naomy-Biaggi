@@ -17,5 +17,5 @@ int Sage::criarDefesa()
 
 string Sage::pegarDescricao() 
 {
-    return "Você não matará meus aliados";
+    return "Você não matará meus aliados!";
 }

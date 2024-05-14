@@ -4,6 +4,7 @@
 #include "../core-simulador-hpp/Simulador.hpp"
 #include "../core-simulador-hpp/Personagem.hpp"
 
+
 using std::cout;
 using std::endl;
 
@@ -75,18 +76,19 @@ Personagem* Simulador::proximoPersonagem(vector<Personagem*> equipe)
         return nullptr;
     }
 
-    int contador = 0;
-    while (contador < tamanho)
-    {
-        if (equipe[contador]->getVida()>0)
-        {
-            return equipe[contador];
-        }
-        contador++;
-
-    }
-
-    return nullptr;
+    // 
+    Personagem* prox;
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    int aleatorio= std::rand()%tamanho;
+    prox= equipe[aleatorio];
+    if(prox->getVida()<=0){
+        do{
+            std::srand(static_cast<unsigned int>(std::time(nullptr)));
+            int aleatorio= std::rand()%tamanho;
+            prox = equipe[aleatorio];
+        } while (prox->getVida()<=0);}
+    
+    return prox;
 }
 
 int Simulador::criarCombate(Personagem* personagem1, Personagem* personagem2)
